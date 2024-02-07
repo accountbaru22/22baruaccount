@@ -1,9 +1,19 @@
-# Dependencies
-.psci_modules
-.spago
-bower_components
-node_modules
+      function printPattern(rows) {
+        for (let i = 1; i <= rows; i++) {
+          let pattern = "";
+          for (let j = 1; j <= i; j++) {
+            pattern += "*";
+          }
+          console.log(pattern);
+        }
 
-# Generated files
-.psci
-output
+        for (let i = rows - 1; i >= 1; i--) {
+          let pattern = "";
+          for (let j = 1; j <= i; j++) {
+            pattern += "*";
+          }
+          console.log(pattern);
+        }
+      }
+
+      printPattern(6);
